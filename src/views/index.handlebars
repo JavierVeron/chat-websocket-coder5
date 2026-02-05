@@ -1,0 +1,21 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <form>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                    <input type="text" class="form-control" id="mensaje">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="enviarMensaje()">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <label for="mensajes" class="form-label fw-bold">Mensajes</label>
+            <div id="mensajes"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./socket.io/socket.io.js"></script>
+<script src="./js/index.js"></script>
